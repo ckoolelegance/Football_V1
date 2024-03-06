@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+  }
+ 
+  
+  @media only screen and (max-width: 600px) {
+	 body{
+		 overflow: hidden;
+	  }
+    .header{
+        margin-top: 10%;
+        margin-left: 15px;
+        transform: translateY(-50%);
+    }
+    .header>h1 {
+        background: linear-gradient(to right,rgba(63, 247, 63, 0.362), rgb(63, 247, 63));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .login-table > div >  input{
+        margin-left: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 95%;
+        border: 2px solid gray;
+        border-width: thin;
+        color: gray;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .submit_btn{
+        background-color: green;
+        color: #fff !important;
+        font-weight: bold;
+        
+        font-size: 18px;
+    }
+
+    .social-login{
+        display:flex;
+        width:85%;
+        margin: 5px auto;
+        text-decoration:none;
+        align-items: center;
+        justify-content: center;
+        padding:10px 15px;
+        color:#6D7A89;
+        border: 1px solid green;
+        font-weight: 600;
+        border-radius:13px;
+        margin-bottom:10px;
+        transition:all .3s ease-in-out;
+      }
+      .social-login:hover{
+          box-shadow:0 10px 15px -5px rgba(0,0,0,0.4);
+      }
+      
+      .social-login{
+        margin-top: 20px;
+      }
+
+      .already-account{
+        display: flex;
+        justify-content: center;
+        margin-top: 30%;
+      }
+  }
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;   
+    font-size: 30px;
+  }
+
+  .fa-facebook-f{
+    color: #007AFF;
+    font-size: 30px;
+  }
+
+  
+  /* Line */
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+    width: 85%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #DDDEE1;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
